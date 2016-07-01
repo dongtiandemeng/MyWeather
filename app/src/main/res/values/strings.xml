@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyWeather</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="search_hint">请输入你要搜索的城市</string>
+    <string name="note_city">我关注的城市</string>
+    <string name="user_login">用户登录</string>
+    <string name="text_weather">rain</string>
+</resources>

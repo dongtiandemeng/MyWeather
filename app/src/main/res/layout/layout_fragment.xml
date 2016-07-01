@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.chen.chenbin.weather.MainActivity">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/id_now_city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Hello World!" />
+
+            <TextView
+                android:id="@+id/id_textView_now_tmp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="50dp"
+                android:layout_below="@+id/id_now_city_name"
+                android:text="25"
+                />
+            <TextView
+                android:id="@+id/id_textView_now_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:textSize="25dp"
+                android:layout_below="@+id/id_textView_now_tmp"
+                android:text="@string/text_weather"
+                />
+            <TextView
+                android:id="@+id/id_textView_now_aqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:textSize="20dp"
+                android:layout_below="@+id/id_textView_now_weather"
+                android:text="you"
+                />
+            <ListView
+                android:id="@+id/id_week_weather_list"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/id_textView_now_aqi"
+                />
+            <GridView
+                android:id="@+id/id_gridview_life"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@id/id_week_weather_list"
+                android:numColumns="auto_fit"
+                android:horizontalSpacing="5dp"
+                android:verticalSpacing="5dp"
+                android:stretchMode="columnWidth"
+                ></GridView>
+        <!--
+
+
+        -->
+    </RelativeLayout>
+</ScrollView>

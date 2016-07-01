@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/id_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="today"
+    />
+
+    <TextView
+        android:id="@+id/id_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_date"
+        android:text="big raining"
+        />
+    <TextView
+        android:id="@+id/id_tmp_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="25"
+        />
+    <TextView
+        android:id="@+id/id_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_tmp_min"
+        android:layout_alignParentRight="true"
+        android:text="small wind"
+    />
+    <View
+        android:id="@+id/id_separation"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        android:layout_toLeftOf="@id/id_tmp_min"
+        android:background="@android:color/background_dark"
+        />
+    <TextView
+        android:id="@+id/id_tmp_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="31"
+        android:layout_toLeftOf="@id/id_separation"
+        />
+
+</RelativeLayout>
